@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Andreas Sirul Rizki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo"><span></span>PORTHOFOLIO</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-label">Halo, perkenalkan saya</div>
+        <h1 class="hero-name">Andreas Sirul Rizki</h1>
+        <div class="hero-title">
+          <span id="typewriter"></span><span class="cursor-blink"></span>
+        </div>
+        <p class="hero-desc">
+          Siswa jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong> yang passionate dalam membangun solusi digital.
+          Berfokus pada pengembangan web dan desain antarmuka yang intuitif.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary"><i class="fa fa-code-branch"></i> Lihat Project</a>
+          <a href="#contact" class="btn-outline"><i class="fa fa-paper-plane"></i> Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <div class="photo-placeholder" style="padding:0;overflow:hidden">
+            <img src="Andre022.png" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" alt="Andreas Sirul Rizki" />
+          </div>
+          <div class="photo-badge">Rekayasa Perangkat Lunak 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — Who I Am</div>
+      <h2 class="section-title reveal">Tentang <span>Saya</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Halo! Nama saya <strong>Andreas Sirul Rizki</strong>, siswa <strong>SMKN 7 Baleendah</strong> jurusan Rekayasa Perangkat Lunak, kelas <strong>XI RPL 3</strong>.
+          </p>
+          <p>
+            Saya memiliki ketertarikan besar pada dunia <strong>web development</strong> dan <strong>UI/UX design</strong>. Saya percaya bahwa teknologi yang baik harus mudah digunakan dan tampak menarik.
+          </p>
+          <p>
+            Di luar pelajaran sekolah, saya aktif mengerjakan proyek-proyek kecil untuk mengasah kemampuan dan memperluas portofolio saya.
+          </p>
+          <div class="info-tags">
+            <span class="info-tag"><i class="fa fa-map-marker-alt"></i> Baleendah, Jawa Barat</span>
+            <span class="info-tag"><i class="fa fa-graduation-cap"></i> SMKN 7 Baleendah — RPL</span>
+            <span class="info-tag"><i class="fa fa-users"></i> XII RPL 3</span>
+            <span class="info-tag"><i class="fa fa-language"></i> ID / EN</span>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Tahun Belajar Coding</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Project Selesai</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Teknologi Dipelajari</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Semangat Belajar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills-bg">
+    <div class="container">
+      <div class="section-label">02 — What I Know</div>
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+      <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(228,77,38,0.12)">
+                <i class="fab fa-html5" style="color:#e44d26"></i>
+              </div>
+              <span class="skill-name">HTML &amp; CSS</span>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="88" style="background: linear-gradient(90deg, #e44d26, #f06529)"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(247,220,111,0.12)">
+                <i class="fab fa-js-square" style="color:#f7dc6f"></i>
+              </div>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="75" style="background: linear-gradient(90deg, #c8a600, #f7dc6f)"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(119,123,180,0.12)">
+                <i class="fab fa-php" style="color:#777bb4"></i>
+              </div>
+              <span class="skill-name">PHP</span>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="70" style="background: linear-gradient(90deg, #6262a0, #777bb4)"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(255,45,32,0.12)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 52" style="width:1em;height:1em;display:inline-block;vertical-align:middle" aria-hidden="true">
+                  <path fill="#FF2D20" d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01a.814.814 0 0 1-.044.025.826.826 0 0 1-.093.033.783.783 0 0 1-.198.032.8.8 0 0 1-.2-.032.826.826 0 0 1-.091-.033.811.811 0 0 1-.043-.025L.402 39.944A.8.8 0 0 1 0 39.25V6.334a.809.809 0 0 1 .028-.209.786.786 0 0 1 .033-.092.77.77 0 0 1 .024-.043.777.777 0 0 1 .058-.073c.013-.014.027-.028.042-.041a.78.78 0 0 1 .071-.052l.013-.011L10.029.197a.8.8 0 0 1 .8 0l9.76 5.633 9.76-5.633a.8.8 0 0 1 .8 0l9.76 5.633.014.011a.776.776 0 0 1 .071.052c.015.013.029.027.043.041a.78.78 0 0 1 .057.073.767.767 0 0 1 .024.043.793.793 0 0 1 .034.092zm-1.574 10.272v-9.18l-3.861 2.227-5.347 3.082v9.18l9.208-5.309zm-10.608 18.243v-9.18l-5.275 3.025-15.064 8.638v9.266l20.339-11.749zM1.6 7.623v31.627l20.339 11.749v-9.266L11.16 35.1l-.004-.002-.004-.002c-.031-.018-.061-.037-.089-.058l-.007-.005a.792.792 0 0 1-.063-.052l-.007-.006-.008-.008a.78.78 0 0 1-.056-.07l-.004-.007a.784.784 0 0 1-.042-.072l-.004-.009a.778.778 0 0 1-.029-.074l-.003-.009a.772.772 0 0 1-.014-.075l-.002-.01a.8.8 0 0 1-.003-.076V16.568L5.46 13.486 1.6 11.259v-3.636zm8.968-5.545L1.76 6.834l8.808 5.082 8.808-5.082-8.808-5.756zm5.317 28.39 5.347-3.082V7.623l-3.861 2.227-5.347 3.082v19.363l3.861-2.222zM39.243 7.038l-8.808 5.082 8.808 5.082 8.808-5.082-8.808-5.082zm-.801 11.624-5.347-3.082-3.861-2.227v9.18l5.347 3.082 3.861 2.222v-9.175zM20.086 38.327l13.567-7.778 6.78-3.886-8.793-5.072-9.554 5.504-8.85 5.098 6.85 6.134z"/>
+                </svg>
+              </div>
+              <span class="skill-name">Laravel</span>
+            </div>
+            <span class="skill-pct">68%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="68" style="background: linear-gradient(90deg, #c0392b, #ff6b35)"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(55,118,171,0.12)">
+                <i class="fab fa-python" style="color:#3776ab"></i>
+              </div>
+              <span class="skill-name">Python</span>
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="65" style="background: linear-gradient(90deg, #3776ab, #ffd43b)"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" style="grid-column: span 2;">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="background:rgba(162,89,255,0.12)">
+                <i class="fab fa-figma" style="color:#a259ff"></i>
+              </div>
+              <span class="skill-name">Figma / UI Design</span>
+            </div>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="72" style="background: linear-gradient(90deg, #a259ff, #f24e1e)"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">03 — What I've Built</div>
+      <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+      <div class="projects-grid projects-grid--two">
+
+        <!-- Project 1: Web Perpustakaan -->
+        <div class="project-card reveal">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0d1b2a, #1a3a5c)">
+            <div class="project-thumb-inner">
+              <i class="fas fa-book-open" style="color: #5b6ef5"></i>
+              <span class="project-thumb-label" style="color: var(--text3)">WEB PROJECT</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag" style="background:rgba(228,77,38,0.15); color:#e44d26">HTML</span>
+              <span class="project-tag" style="background:rgba(119,123,180,0.15); color:#777bb4">PHP</span>
+              <span class="project-tag" style="background:rgba(0,117,143,0.15); color:#00758f">MySQL</span>
+            </div>
+            <h3 class="project-title">Web Perpustakaan</h3>
+            <p class="project-desc">Aplikasi manajemen perpustakaan berbasis web dengan fitur peminjaman, pengembalian buku, dan data anggota.</p>
+            <div class="project-footer">
+              <a href="#" class="btn-sm btn-sm-primary"><i class="fa fa-eye"></i> Lihat Project</a>
+              <a href="#" class="btn-sm btn-sm-ghost"><i class="fab fa-github"></i> Kode</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Web SPP -->
+        <div class="project-card reveal">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0f1a0d, #1a3a1f)">
+            <div class="project-thumb-inner">
+              <i class="fas fa-money-bill-wave" style="color: #06d6a0"></i>
+              <span class="project-thumb-label" style="color: var(--text3)">WEB PROJECT</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag" style="background:rgba(228,77,38,0.15); color:#e44d26">HTML</span>
+              <span class="project-tag" style="background:rgba(119,123,180,0.15); color:#777bb4">PHP</span>
+              <span class="project-tag" style="background:rgba(0,117,143,0.15); color:#00758f">MySQL</span>
+            </div>
+            <h3 class="project-title">Web SPP</h3>
+            <p class="project-desc">Aplikasi pembayaran SPP sekolah berbasis web dengan fitur input pembayaran, riwayat transaksi, dan laporan per siswa.</p>
+            <div class="project-footer">
+              <a href="#" class="btn-sm btn-sm-primary"><i class="fa fa-eye"></i> Lihat Project</a>
+              <a href="#" class="btn-sm btn-sm-ghost"><i class="fab fa-github"></i> Kode</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-bg">
+    <div class="container">
+      <div class="section-label">04 — Get In Touch</div>
+      <h2 class="section-title reveal">Contact <span>Me</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Mari Terhubung! 👋</h3>
+          <p>Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk peluang baru dan diskusi menarik.</p>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <span>andreassirulrizki@gmail.com</span>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <span>+62 85199296848</span>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <span>Baleendah, Jawa Barat, Indonesia</span>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn github" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/_andreassirul" class="social-btn instagram" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="reveal">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="access_key" value="2e3ffdde-5616-44be-99cd-ba05a953f057" />
+            <!-- honeypot anti-spam Web3Forms -->
+            <input type="checkbox" name="botcheck" style="display:none" />
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama</label>
+                <input type="text" name="name" placeholder="Nama lengkap kamu" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="email@contoh.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subjek</label>
+              <input type="text" name="subject" placeholder="Tentang apa?" required />
+            </div>
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea name="message" placeholder="Tulis pesanmu di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="submitBtn">
+              <i class="fa fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024-2027 <span>Andreas Sirul Rizki</span> — RPL Student Portfolio</p>
+    <p>Dibuat dengan <span>♥</span> menggunakan HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
